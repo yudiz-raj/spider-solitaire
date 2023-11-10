@@ -27,6 +27,6 @@ class Boot extends Phaser.Scene {
 	}
 }
 
-// window.onbeforeunload = function () {
-// 	return "Game will reset , are you sure?";
-// };
+window.onbeforeunload = function () {
+	return "Game will reset , are you sure?";
+};

@@ -27,87 +27,38 @@ class Level extends Phaser.Scene {
 		const container_bg = this.add.container(0, 1);
 
 		// card_base
-		const card_base = this.add.image(101, 335, "card_base-2");
+		const card_base = this.add.image(117, 335, "card_base-2");
 		container_bg.add(card_base);
 
 		// collect_cards
-		const collect_cards = this.add.image(101, 335, "back_red_1");
+		const collect_cards = this.add.image(117, 335, "back_red_1");
 		container_bg.add(collect_cards);
 
-		// text_1
-		const text_1 = this.add.text(295, 303, "", {});
-		text_1.setOrigin(0.5, 0);
-		text_1.text = "Spider Solitaire";
-		text_1.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 5, "shadow.stroke": true, "shadow.fill": true });
-		container_bg.add(text_1);
-
 		// text
-		const text = this.add.text(295, 343, "", {});
+		const text = this.add.text(295, 314, "", {});
 		text.setOrigin(0.5, 0);
 		text.text = "One Suit";
-		text.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 2 });
+		text.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#00000001", "strokeThickness": 2 });
 		container_bg.add(text);
 
 		// btn_play_again
-		const btn_play_again = this.add.image(295, 435, "button");
+		const btn_play_again = this.add.image(295, 396, "button");
 		btn_play_again.scaleX = 0.5;
 		btn_play_again.scaleY = 0.5;
 		container_bg.add(btn_play_again);
 
-		// text_2
-		const text_2 = this.add.text(295, 428, "", {});
-		text_2.setOrigin(0.5, 0);
-		text_2.text = "Play Again";
-		text_2.setStyle({ "fontFamily": "Verdana" });
-		container_bg.add(text_2);
-
 		// logo
-		const logo = this.add.image(295, 257, "logo");
-		logo.scaleX = 0.5;
-		logo.scaleY = 0.5;
+		const logo = this.add.image(295, 276, "logo");
+		logo.scaleX = 0.1;
+		logo.scaleY = 0.1;
 		container_bg.add(logo);
 
 		// txt_time
-		const txt_time = this.add.text(295, 378, "", {});
+		const txt_time = this.add.text(295, 346, "", {});
 		txt_time.setOrigin(0.5, 0);
 		txt_time.text = "00:00";
-		txt_time.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 2 });
+		txt_time.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#00ccff02", "strokeThickness": 2 });
 		container_bg.add(txt_time);
-
-		// container_base_cards
-		const container_base_cards = this.add.container(0, 0);
-
-		// baseCard_7
-		const baseCard_7 = new BaseCard(this, 1827, 340);
-		container_base_cards.add(baseCard_7);
-
-		// baseCard_6
-		const baseCard_6 = new BaseCard(this, 1636, 340);
-		container_base_cards.add(baseCard_6);
-
-		// baseCard_5
-		const baseCard_5 = new BaseCard(this, 1445, 340);
-		container_base_cards.add(baseCard_5);
-
-		// baseCard_4
-		const baseCard_4 = new BaseCard(this, 1254, 340);
-		container_base_cards.add(baseCard_4);
-
-		// baseCard_3
-		const baseCard_3 = new BaseCard(this, 1064, 340);
-		container_base_cards.add(baseCard_3);
-
-		// baseCard_2
-		const baseCard_2 = new BaseCard(this, 874, 340);
-		container_base_cards.add(baseCard_2);
-
-		// baseCard_1
-		const baseCard_1 = new BaseCard(this, 684, 340);
-		container_base_cards.add(baseCard_1);
-
-		// baseCard_0
-		const baseCard_0 = new BaseCard(this, 493, 340);
-		container_base_cards.add(baseCard_0);
 
 		// container_bg_cards
 		const container_bg_cards = this.add.container(0, 0);
@@ -225,6 +176,41 @@ class Level extends Phaser.Scene {
 		container_cards_9.name = "container_cards_9";
 		container_cards_main.add(container_cards_9);
 
+		// container_base_cards
+		const container_base_cards = this.add.container(0, 0);
+
+		// baseCard_7
+		const baseCard_7 = new BaseCard(this, 1827, 340);
+		container_base_cards.add(baseCard_7);
+
+		// baseCard_6
+		const baseCard_6 = new BaseCard(this, 1636, 340);
+		container_base_cards.add(baseCard_6);
+
+		// baseCard_5
+		const baseCard_5 = new BaseCard(this, 1445, 340);
+		container_base_cards.add(baseCard_5);
+
+		// baseCard_4
+		const baseCard_4 = new BaseCard(this, 1254, 340);
+		container_base_cards.add(baseCard_4);
+
+		// baseCard_3
+		const baseCard_3 = new BaseCard(this, 1064, 340);
+		container_base_cards.add(baseCard_3);
+
+		// baseCard_2
+		const baseCard_2 = new BaseCard(this, 874, 340);
+		container_base_cards.add(baseCard_2);
+
+		// baseCard_1
+		const baseCard_1 = new BaseCard(this, 684, 340);
+		container_base_cards.add(baseCard_1);
+
+		// baseCard_0
+		const baseCard_0 = new BaseCard(this, 493, 340);
+		container_base_cards.add(baseCard_0);
+
 		// container_top
 		const container_top = this.add.container(0, 0);
 
@@ -246,16 +232,20 @@ class Level extends Phaser.Scene {
 		txt_toast.setStyle({ "fontFamily": "Verdana" });
 		container_toast.add(txt_toast);
 
+		// container_sequence_cards
+		const container_sequence_cards = this.add.container(0, 0);
+
 		this.container_win_cards = container_win_cards;
 		this.collect_cards = collect_cards;
 		this.btn_play_again = btn_play_again;
 		this.txt_time = txt_time;
-		this.container_base_cards = container_base_cards;
 		this.container_cards_main = container_cards_main;
+		this.container_base_cards = container_base_cards;
 		this.container_top = container_top;
 		this.bg_toast = bg_toast;
 		this.txt_toast = txt_toast;
 		this.container_toast = container_toast;
+		this.container_sequence_cards = container_sequence_cards;
 
 		this.events.emit("scene-awake");
 	}
@@ -269,9 +259,9 @@ class Level extends Phaser.Scene {
 	/** @type {Phaser.GameObjects.Text} */
 	txt_time;
 	/** @type {Phaser.GameObjects.Container} */
-	container_base_cards;
-	/** @type {Phaser.GameObjects.Container} */
 	container_cards_main;
+	/** @type {Phaser.GameObjects.Container} */
+	container_base_cards;
 	/** @type {Phaser.GameObjects.Container} */
 	container_top;
 	/** @type {Phaser.GameObjects.Rectangle} */
@@ -280,6 +270,8 @@ class Level extends Phaser.Scene {
 	txt_toast;
 	/** @type {Phaser.GameObjects.Container} */
 	container_toast;
+	/** @type {Phaser.GameObjects.Container} */
+	container_sequence_cards;
 
 	/* START-USER-CODE */
 
@@ -505,17 +497,19 @@ class Level extends Phaser.Scene {
 			this.openLastCard(this.lastContainer);
 		}
 	}
-	winSequenceAnimation = (card, i) => {
+	winSequenceAnimation = (container, card, i, sequenceCardCount) => {
 		this.tweens.add({
-			targets: card[i],
+			targets: card,
 			x: this.container_base_cards.list[this.nTotalSequence].x,
 			y: this.container_base_cards.list[this.nTotalSequence].y,
 			duration: 100,
 			delay: 0 + (i * 50),
 			onComplete: () => {
-				// container.list[i].setPosition(0, 0);
-				// this.container_win_cards.add(card[i]);
-				// this.container_base_cards.list[this.nTotalSequence].setWinCard();
+				this.container_sequence_cards.add(card);
+				if (sequenceCardCount == 12) {
+					console.log(sequenceCardCount);
+					this.openLastCard(container);
+				}
 			}
 		})
 	}
@@ -541,42 +535,50 @@ class Level extends Phaser.Scene {
 				if (this.isWinSequence(aSequence)) {
 					this.nTotalSequence++;
 					const length = container.list.length;
+					let sequenceCardCount = aSequence.length;
 					for (let i = length - 1; i >= length - 13; i--) {
-						// container.list[i].setPosition(0, 0);
-						this.winSequenceAnimation(container.list, i);
-						this.container_base_cards.add(container.list[i]);
+						sequenceCardCount--;
+						container.list[i].disableInteractive();
+						this.winSequenceAnimation(container, container.list[i], i, sequenceCardCount);
 					}
-					this.container_base_cards.list[this.nTotalSequence].setWinCard();
-					this.openLastCard(container);
 					if (this.nTotalSequence == 7) this.fireWorks();
 				}
 			}
 		}
 	}
-	openLastCardAnimation = (card) => {
+	openLastCardAnimation = (container, card) => {
 		this.tweens.add({
 			targets: card,
-			scaleX: 1,
-			duration: 50
-		})
-	}
-	openLastCard = (container) => {
-		if (container.length) {
-			console.log("container");
-			const card = container.list[container.list.length - 1];
-			if (card.name == "back_red_0") {
+			scaleX: 0,
+			duration: 50,
+			onComplete: () => {
 				const cardName = this.oGameManager.getRandomCard(this.aTotalCards);
 				const card = container.list[container.list.length - 1];
 				card.setCard("spade_" + cardName);
 				card.setName("spade_" + cardName);
 				card.setSize(180, 260);
 				card.setScale(0, 1);
-				this.openLastCardAnimation(card);
-				card.setInteractive({ draggable: true });
+				this.tweens.add({
+					targets: card,
+					scaleX: 1,
+					duration: 50,
+					onComplete: () => {
+						card.setInteractive({ draggable: true });
+					}
+				});
+			}
+
+		})
+	}
+	openLastCard = (container) => {
+		if (container.length) {
+			const card = container.list[container.list.length - 1];
+			if (card.name == "back_red_0") {
+				this.openLastCardAnimation(container, card);
 			}
 		}
 	}
-	collectCardsAnimation = (card, i, y) => {
+	collectCardsAnimation = (container, card, i, y) => {
 		card.setScale(0.65);
 		this.tweens.add({
 			targets: card,
@@ -590,6 +592,9 @@ class Level extends Phaser.Scene {
 			},
 			delay: 0 + (50 * i),
 			duration: 200,
+			onComplete: () => {
+				card.setInteractive({ draggable: true });
+			}
 		})
 	}
 	collectCards = () => {
@@ -608,12 +613,11 @@ class Level extends Phaser.Scene {
 			const y = cardContainer[cardContainer.length - 1].y;
 			const card = new Card(this, this.collect_cards.x, this.collect_cards.y);
 			card.setVisible(false);
-			this.collectCardsAnimation(card, i, y + gap);
 			card.setCard(cardName);
 			card.setName(cardName);
 			card.setSize(180, 260);
-			card.setInteractive({ draggable: true });
 			cardContainerList[i].add(card);
+			this.collectCardsAnimation(cardContainerList, card, i, y + gap);
 		}
 		return true;
 	}

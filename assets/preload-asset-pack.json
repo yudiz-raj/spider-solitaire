@@ -10,6 +10,11 @@
                 "url": "assets/images/solitaired-logo.png",
                 "type": "image",
                 "key": "solitaired-logo"
+            },
+            {
+                "url": "assets/images/splash-screen-bg.png",
+                "type": "image",
+                "key": "splash-screen-bg"
             }
         ]
     },

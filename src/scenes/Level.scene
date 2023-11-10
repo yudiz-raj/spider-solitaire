@@ -39,7 +39,7 @@
                     "texture": {
                         "key": "card_base-2"
                     },
-                    "x": 101,
+                    "x": 117,
                     "y": 335
                 },
                 {
@@ -50,37 +50,22 @@
                     "texture": {
                         "key": "back_red_1"
                     },
-                    "x": 101,
+                    "x": 117,
                     "y": 335
-                },
-                {
-                    "type": "Text",
-                    "id": "eee50f5d-ad7d-4953-b96b-723ff2f5c52a",
-                    "label": "text_1",
-                    "x": 295,
-                    "y": 303,
-                    "originX": 0.5,
-                    "text": "Spider Solitaire",
-                    "fontFamily": "Verdana",
-                    "fontSize": "20px",
-                    "fontStyle": "bold",
-                    "stroke": "#000",
-                    "strokeThickness": 5,
-                    "shadow.stroke": true,
-                    "shadow.fill": true
                 },
                 {
                     "type": "Text",
                     "id": "cfb2075f-9225-414e-b23f-9723bc71d5a5",
                     "label": "text",
                     "x": 295,
-                    "y": 343,
+                    "y": 314,
                     "originX": 0.5,
                     "text": "One Suit",
                     "fontFamily": "Verdana",
                     "fontSize": "20px",
                     "fontStyle": "bold",
-                    "stroke": "#000",
+                    "color": "#1038e1ff",
+                    "stroke": "#00000001",
                     "strokeThickness": 2
                 },
                 {
@@ -92,19 +77,9 @@
                         "key": "button"
                     },
                     "x": 295,
-                    "y": 435,
+                    "y": 396,
                     "scaleX": 0.5,
                     "scaleY": 0.5
-                },
-                {
-                    "type": "Text",
-                    "id": "f661395c-9a67-4c00-9ba5-3c694543d53f",
-                    "label": "text_2",
-                    "x": 295,
-                    "y": 428,
-                    "originX": 0.5,
-                    "text": "Play Again",
-                    "fontFamily": "Verdana"
                 },
                 {
                     "type": "Image",
@@ -114,9 +89,9 @@
                         "key": "logo"
                     },
                     "x": 295,
-                    "y": 257,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "y": 276,
+                    "scaleX": 0.1,
+                    "scaleY": 0.1
                 },
                 {
                     "type": "Text",
@@ -124,110 +99,15 @@
                     "label": "txt_time",
                     "scope": "CLASS",
                     "x": 295,
-                    "y": 378,
+                    "y": 346,
                     "originX": 0.5,
                     "text": "00:00",
                     "fontFamily": "Verdana",
                     "fontSize": "20px",
                     "fontStyle": "bold",
-                    "stroke": "#000",
+                    "color": "#1038e1ff",
+                    "stroke": "#00ccff02",
                     "strokeThickness": 2
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "1287da72-c652-4733-9201-01933bb52adf",
-            "label": "container_base_cards",
-            "scope": "CLASS",
-            "list": [
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "0853c786-7feb-4f44-9c10-0c01b08f4bdd",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_7",
-                    "x": 1827,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "6fd4bcc5-2371-4dd9-9999-0fde164c8800",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_6",
-                    "x": 1636,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "5b051148-49d0-4572-9890-94b9f0271873",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_5",
-                    "x": 1445,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "39268084-beef-405d-9056-d359397eef54",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_4",
-                    "x": 1254,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "e894b5f5-e19d-417c-bc9b-1338d627b226",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_3",
-                    "x": 1064,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "fac4518b-c885-4b68-820c-408eabbc90d1",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_2",
-                    "x": 874,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "0d512ad6-f0fd-4fda-b292-2619b9f83483",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_1",
-                    "x": 684,
-                    "y": 340
-                },
-                {
-                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
-                    "id": "a7ee229b-ea36-42fe-8bd8-c3440c2198cc",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseCard_0",
-                    "x": 493,
-                    "y": 340
                 }
             ]
         },
@@ -428,6 +308,102 @@
         },
         {
             "type": "Container",
+            "id": "1287da72-c652-4733-9201-01933bb52adf",
+            "label": "container_base_cards",
+            "scope": "CLASS",
+            "list": [
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "0853c786-7feb-4f44-9c10-0c01b08f4bdd",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_7",
+                    "x": 1827,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "6fd4bcc5-2371-4dd9-9999-0fde164c8800",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_6",
+                    "x": 1636,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "5b051148-49d0-4572-9890-94b9f0271873",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_5",
+                    "x": 1445,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "39268084-beef-405d-9056-d359397eef54",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_4",
+                    "x": 1254,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "e894b5f5-e19d-417c-bc9b-1338d627b226",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_3",
+                    "x": 1064,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "fac4518b-c885-4b68-820c-408eabbc90d1",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_2",
+                    "x": 874,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "0d512ad6-f0fd-4fda-b292-2619b9f83483",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_1",
+                    "x": 684,
+                    "y": 340
+                },
+                {
+                    "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
+                    "id": "a7ee229b-ea36-42fe-8bd8-c3440c2198cc",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseCard_0",
+                    "x": 493,
+                    "y": 340
+                }
+            ]
+        },
+        {
+            "type": "Container",
             "id": "fb04e991-f94a-4798-a908-3e34c5198d6a",
             "label": "container_top",
             "scope": "CLASS"
@@ -465,6 +441,12 @@
                     "fontFamily": "Verdana"
                 }
             ]
+        },
+        {
+            "type": "Container",
+            "id": "263ff493-459a-49e1-808a-a023e517e54f",
+            "label": "container_sequence_cards",
+            "scope": "CLASS"
         }
     ],
     "plainObjects": [],

@@ -13,15 +13,23 @@
             "type": "Container",
             "id": "032c3d52-ecd0-42d6-888d-a84e4f1e3585",
             "label": "container_bg",
-            "components": [],
             "list": [
+                {
+                    "type": "Image",
+                    "id": "1eaddd99-722b-4a91-99f9-996fc592c7e6",
+                    "label": "background",
+                    "texture": {
+                        "key": "background"
+                    },
+                    "x": 960,
+                    "y": 540
+                },
                 {
                     "type": "Text",
                     "id": "5561da01-f492-4d3f-8a24-7064aad1fb22",
                     "label": "text",
-                    "components": [],
                     "x": 508,
-                    "y": 103,
+                    "y": 314,
                     "originX": 0.5,
                     "text": "Solitaire",
                     "fontFamily": "Verdana",
@@ -36,9 +44,8 @@
                     "type": "Text",
                     "id": "6cce7f2d-e43d-465a-92f6-e7352b7930e3",
                     "label": "text_2",
-                    "components": [],
                     "x": 508,
-                    "y": 143,
+                    "y": 354,
                     "originX": 0.5,
                     "text": "Turn 1",
                     "fontFamily": "Verdana",
@@ -52,36 +59,11 @@
                     "id": "d1bff680-21dc-4780-9f31-d7ac3f02bf8e",
                     "label": "btn_play_again",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "button"
                     },
                     "x": 508,
-                    "y": 235,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Text",
-                    "id": "6b44ef48-e48e-4435-b37f-093c92a3cdae",
-                    "label": "text_3",
-                    "components": [],
-                    "x": 508,
-                    "y": 228,
-                    "originX": 0.5,
-                    "text": "Play Again",
-                    "fontFamily": "Verdana"
-                },
-                {
-                    "type": "Image",
-                    "id": "ecf1d5f0-1693-4f7a-94d2-ec7b8bf72a28",
-                    "label": "logo",
-                    "components": [],
-                    "texture": {
-                        "key": "logo"
-                    },
-                    "x": 508,
-                    "y": 57,
+                    "y": 446,
                     "scaleX": 0.5,
                     "scaleY": 0.5
                 },
@@ -90,9 +72,8 @@
                     "id": "d76cfef9-87c9-4091-b931-4aefa4cf2a96",
                     "label": "txt_time",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 508,
-                    "y": 178,
+                    "y": 389,
                     "originX": 0.5,
                     "text": "00:00",
                     "fontFamily": "Verdana",
@@ -107,15 +88,25 @@
             "type": "Container",
             "id": "76bcdc94-39ed-4259-8c3a-69733b66764c",
             "label": "container_body",
-            "components": [],
             "list": [
+                {
+                    "type": "Image",
+                    "id": "028cb430-cc91-46cb-ad80-1815a822167e",
+                    "label": "delt_base_0",
+                    "texture": {
+                        "key": "card_base-2"
+                    },
+                    "x": 110,
+                    "y": 364,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
+                },
                 {
                     "type": "Text",
                     "id": "9f17137f-3494-4d19-837a-b13893e710b4",
                     "label": "text_1",
-                    "components": [],
                     "x": 110,
-                    "y": 213,
+                    "y": 402,
                     "originX": 0.5,
                     "alpha": 0.5,
                     "alphaTopLeft": 0.5,
@@ -136,12 +127,11 @@
                     "id": "5fdbd890-10c4-4dda-9fb3-b7c771f9dd55",
                     "label": "btn_redeal",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
                         "key": "redeal"
                     },
                     "x": 110,
-                    "y": 153,
+                    "y": 342,
                     "scaleX": 0.2,
                     "scaleY": 0.2,
                     "alpha": 0.5,
@@ -155,49 +145,32 @@
                     "id": "8e8fc3ab-767f-45a8-9862-8a486b929846",
                     "label": "delt_card",
                     "scope": "CLASS",
-                    "components": [],
                     "texture": {
-                        "key": "back_red_0"
+                        "key": "back_red_1"
                     },
                     "x": 110,
-                    "y": 153,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
-                },
-                {
-                    "type": "Image",
-                    "id": "028cb430-cc91-46cb-ad80-1815a822167e",
-                    "label": "delt_base_0",
-                    "components": [],
-                    "texture": {
-                        "key": "card_base-2"
-                    },
-                    "x": 110,
-                    "y": 153,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 364,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "acc58bbf-433e-4581-8142-4facd003205e",
                     "label": "delt_base_1",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 310,
-                    "y": 153,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 364,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Container",
                     "id": "eed8b74d-61da-4fe8-871d-a41d5d9cb738",
                     "label": "container_delt_cards_24",
                     "useGameObjectName": true,
-                    "scope": "CLASS",
-                    "components": [],
-                    "list": []
+                    "scope": "CLASS"
                 }
             ]
         },
@@ -205,7 +178,6 @@
             "type": "Container",
             "id": "6d1588fc-db1d-4277-a9b2-86396a92e51c",
             "label": "container_base_cards",
-            "components": [],
             "list": [
                 {
                     "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
@@ -216,10 +188,8 @@
                     ],
                     "label": "baseCard_0",
                     "useGameObjectName": true,
-                    "components": [],
                     "x": 710,
-                    "y": 153,
-                    "nestedPrefabs": []
+                    "y": 364
                 },
                 {
                     "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
@@ -230,10 +200,8 @@
                     ],
                     "label": "baseCard_1",
                     "useGameObjectName": true,
-                    "components": [],
                     "x": 910,
-                    "y": 153,
-                    "nestedPrefabs": []
+                    "y": 364
                 },
                 {
                     "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
@@ -244,10 +212,8 @@
                     ],
                     "label": "baseCard_2",
                     "useGameObjectName": true,
-                    "components": [],
                     "x": 1110,
-                    "y": 153,
-                    "nestedPrefabs": []
+                    "y": 364
                 },
                 {
                     "prefabId": "f2840477-2d74-4d49-bf0a-0787a8a03c96",
@@ -259,10 +225,8 @@
                     "label": "baseCard_3",
                     "useGameObjectName": true,
                     "scope": "CLASS",
-                    "components": [],
                     "x": 1310,
-                    "y": 153,
-                    "nestedPrefabs": []
+                    "y": 364
                 }
             ]
         },
@@ -270,98 +234,90 @@
             "type": "Container",
             "id": "299563c9-3745-48c7-8a08-0f6bd34b6b39",
             "label": "container_bg_cards",
-            "components": [],
             "list": [
                 {
                     "type": "Image",
                     "id": "5a4f2a47-b835-401c-945b-0d5e3a542ab8",
                     "label": "card_base_0",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 110,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "358e175d-8191-4ee0-b8c8-61bc82f9e736",
                     "label": "card_base_1",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 310,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "ebdb2317-fca7-4f08-a969-ea7eaaa573a4",
                     "label": "card_base_2",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 510,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "3d7ef18d-1814-4aa2-986f-e34fbc5590b0",
                     "label": "card_base_3",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 710,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "be095a4f-2616-4088-a68b-d7ee1c6ef052",
                     "label": "card_base_4",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 910,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "8edbf69f-96de-497a-90fa-627737e27154",
                     "label": "card_base_5",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 1110,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 },
                 {
                     "type": "Image",
                     "id": "c72516fa-a226-4f4b-a8bb-2ceffe7e04c0",
                     "label": "card_base_6",
-                    "components": [],
                     "texture": {
                         "key": "card_base-2"
                     },
                     "x": 1310,
-                    "y": 414,
-                    "scaleX": 0.45,
-                    "scaleY": 0.45
+                    "y": 625,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
                 }
             ]
         },
@@ -370,39 +326,30 @@
             "id": "aed25bbb-caef-44f9-b89c-5fb480a00f94",
             "label": "container_pure_sequence",
             "scope": "CLASS",
-            "components": [],
             "list": [
                 {
                     "type": "Container",
                     "id": "d28cc308-7458-4a4f-b7c5-e50204f8388b",
                     "label": "container_pure_piles_0",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "383ffa0e-a5dd-4e38-bedb-b6ec40ff2b66",
                     "label": "container_pure_piles_1",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "43c71277-8cae-489b-9f04-b05c187655fa",
                     "label": "container_pure_piles_2",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "da2ff6b9-aba4-498f-972f-37c61c5280cb",
                     "label": "container_pure_piles_3",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 }
             ]
         },
@@ -411,63 +358,49 @@
             "id": "33e824c3-8e05-47be-94fb-7fb8615da7cf",
             "label": "container_piles_main",
             "scope": "CLASS",
-            "components": [],
+            "y": 1099,
             "list": [
                 {
                     "type": "Container",
                     "id": "398e48e2-f927-4f27-b9f1-95c0be2f49cb",
                     "label": "container_piles_0",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "d210b54f-f186-4d8b-8ef5-468f02cac10c",
                     "label": "container_piles_1",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "6e18407e-713f-42b0-a389-6e1502458d8c",
                     "label": "container_piles_2",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "f43c1f13-641c-48b4-ac15-2060ccd52c1e",
                     "label": "container_piles_3",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "89143f35-92d8-491d-87e6-1422dbecec44",
                     "label": "container_piles_4",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "9fd52dd9-d481-46c2-ab99-578258e0883c",
                     "label": "container_piles_5",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 },
                 {
                     "type": "Container",
                     "id": "f9f16d1c-7b4c-428d-811d-b2aa3a12f739",
                     "label": "container_piles_6",
-                    "useGameObjectName": true,
-                    "components": [],
-                    "list": []
+                    "useGameObjectName": true
                 }
             ]
         },
@@ -475,16 +408,13 @@
             "type": "Container",
             "id": "0c40bc7c-8ceb-4da0-a29b-85591ddc07b8",
             "label": "container_top",
-            "scope": "CLASS",
-            "components": [],
-            "list": []
+            "scope": "CLASS"
         },
         {
             "type": "Container",
             "id": "635abd1c-9505-418a-97c5-bcc3a79fcdca",
             "label": "container_toast",
             "scope": "CLASS",
-            "components": [],
             "x": 10,
             "y": 1000,
             "visible": false,
@@ -494,7 +424,6 @@
                     "id": "91a3557e-3acc-40b8-9a62-b0e6fe7153aa",
                     "label": "bg_toast",
                     "scope": "CLASS",
-                    "components": [],
                     "originX": 0,
                     "originY": 0,
                     "isFilled": true,
@@ -507,7 +436,6 @@
                     "id": "227e25e3-1b63-4438-aa88-5c6db2a433d8",
                     "label": "txt_toast",
                     "scope": "CLASS",
-                    "components": [],
                     "x": 10,
                     "y": 25,
                     "originY": 0.5,
@@ -522,6 +450,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 3
+        "version": 4
     }
 }
