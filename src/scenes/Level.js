@@ -35,29 +35,27 @@ class Level extends Phaser.Scene {
 		container_bg.add(collect_cards);
 
 		// text
-		const text = this.add.text(295, 314, "", {});
+		const text = this.add.text(281, 308, "", {});
 		text.setOrigin(0.5, 0);
 		text.text = "One Suit";
-		text.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#00000001", "strokeThickness": 2 });
+		text.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "26px", "fontStyle": "bold", "stroke": "#000" });
 		container_bg.add(text);
 
 		// btn_play_again
-		const btn_play_again = this.add.image(295, 396, "button");
-		btn_play_again.scaleX = 0.5;
-		btn_play_again.scaleY = 0.5;
+		const btn_play_again = this.add.image(281, 410, "button");
 		container_bg.add(btn_play_again);
 
 		// logo
-		const logo = this.add.image(295, 276, "logo");
-		logo.scaleX = 0.1;
-		logo.scaleY = 0.1;
+		const logo = this.add.image(295, 262, "logo");
+		logo.scaleX = 0.15;
+		logo.scaleY = 0.15;
 		container_bg.add(logo);
 
 		// txt_time
-		const txt_time = this.add.text(295, 346, "", {});
+		const txt_time = this.add.text(281, 345, "", {});
 		txt_time.setOrigin(0.5, 0);
 		txt_time.text = "00:00";
-		txt_time.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#00ccff02", "strokeThickness": 2 });
+		txt_time.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "26px", "fontStyle": "bold", "stroke": "#000000" });
 		container_bg.add(txt_time);
 
 		// container_bg_cards

@@ -57,16 +57,15 @@
                     "type": "Text",
                     "id": "cfb2075f-9225-414e-b23f-9723bc71d5a5",
                     "label": "text",
-                    "x": 295,
-                    "y": 314,
+                    "x": 281,
+                    "y": 308,
                     "originX": 0.5,
                     "text": "One Suit",
                     "fontFamily": "Verdana",
-                    "fontSize": "20px",
+                    "fontSize": "26px",
                     "fontStyle": "bold",
                     "color": "#1038e1ff",
-                    "stroke": "#00000001",
-                    "strokeThickness": 2
+                    "stroke": "#000"
                 },
                 {
                     "type": "Image",
@@ -76,10 +75,8 @@
                     "texture": {
                         "key": "button"
                     },
-                    "x": 295,
-                    "y": 396,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "x": 281,
+                    "y": 410
                 },
                 {
                     "type": "Image",
@@ -89,25 +86,24 @@
                         "key": "logo"
                     },
                     "x": 295,
-                    "y": 276,
-                    "scaleX": 0.1,
-                    "scaleY": 0.1
+                    "y": 262,
+                    "scaleX": 0.15,
+                    "scaleY": 0.15
                 },
                 {
                     "type": "Text",
                     "id": "bff6cd89-5d71-42bd-adbd-153674c281e8",
                     "label": "txt_time",
                     "scope": "CLASS",
-                    "x": 295,
-                    "y": 346,
+                    "x": 281,
+                    "y": 345,
                     "originX": 0.5,
                     "text": "00:00",
                     "fontFamily": "Verdana",
-                    "fontSize": "20px",
+                    "fontSize": "26px",
                     "fontStyle": "bold",
                     "color": "#1038e1ff",
-                    "stroke": "#00ccff02",
-                    "strokeThickness": 2
+                    "stroke": "#000000"
                 }
             ]
         },

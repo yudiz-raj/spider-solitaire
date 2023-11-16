@@ -28,12 +28,12 @@
                     "type": "Text",
                     "id": "5561da01-f492-4d3f-8a24-7064aad1fb22",
                     "label": "text",
-                    "x": 508,
-                    "y": 314,
+                    "x": 509,
+                    "y": 271,
                     "originX": 0.5,
                     "text": "Solitaire",
                     "fontFamily": "Verdana",
-                    "fontSize": "20px",
+                    "fontSize": "40px",
                     "fontStyle": "bold",
                     "stroke": "#000",
                     "strokeThickness": 5,
@@ -44,15 +44,15 @@
                     "type": "Text",
                     "id": "6cce7f2d-e43d-465a-92f6-e7352b7930e3",
                     "label": "text_2",
-                    "x": 508,
-                    "y": 354,
+                    "x": 509,
+                    "y": 332,
                     "originX": 0.5,
                     "text": "Turn 1",
                     "fontFamily": "Verdana",
                     "fontSize": "20px",
                     "fontStyle": "bold",
-                    "stroke": "#000",
-                    "strokeThickness": 2
+                    "color": "#1038e1ff",
+                    "stroke": "#000"
                 },
                 {
                     "type": "Image",
@@ -62,25 +62,23 @@
                     "texture": {
                         "key": "button"
                     },
-                    "x": 508,
-                    "y": 446,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
+                    "x": 509,
+                    "y": 433
                 },
                 {
                     "type": "Text",
                     "id": "d76cfef9-87c9-4091-b931-4aefa4cf2a96",
                     "label": "txt_time",
                     "scope": "CLASS",
-                    "x": 508,
-                    "y": 389,
+                    "x": 509,
+                    "y": 368,
                     "originX": 0.5,
                     "text": "00:00",
                     "fontFamily": "Verdana",
                     "fontSize": "20px",
                     "fontStyle": "bold",
-                    "stroke": "#000",
-                    "strokeThickness": 2
+                    "color": "#1038e1ff",
+                    "stroke": "#000"
                 }
             ]
         },
@@ -427,7 +425,7 @@
                     "originX": 0,
                     "originY": 0,
                     "isFilled": true,
-                    "fillColor": "#577345",
+                    "fillColor": "#5686ad",
                     "width": 500,
                     "height": 50
                 },

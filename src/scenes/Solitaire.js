@@ -24,30 +24,28 @@ class Solitaire extends Phaser.Scene {
 		container_bg.add(background);
 
 		// text
-		const text = this.add.text(508, 314, "", {});
+		const text = this.add.text(509, 271, "", {});
 		text.setOrigin(0.5, 0);
 		text.text = "Solitaire";
-		text.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 5, "shadow.stroke": true, "shadow.fill": true });
+		text.setStyle({ "fontFamily": "Verdana", "fontSize": "40px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 5, "shadow.stroke": true, "shadow.fill": true });
 		container_bg.add(text);
 
 		// text_2
-		const text_2 = this.add.text(508, 354, "", {});
+		const text_2 = this.add.text(509, 332, "", {});
 		text_2.setOrigin(0.5, 0);
 		text_2.text = "Turn 1";
-		text_2.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 2 });
+		text_2.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000" });
 		container_bg.add(text_2);
 
 		// btn_play_again
-		const btn_play_again = this.add.image(508, 446, "button");
-		btn_play_again.scaleX = 0.5;
-		btn_play_again.scaleY = 0.5;
+		const btn_play_again = this.add.image(509, 433, "button");
 		container_bg.add(btn_play_again);
 
 		// txt_time
-		const txt_time = this.add.text(508, 389, "", {});
+		const txt_time = this.add.text(509, 368, "", {});
 		txt_time.setOrigin(0.5, 0);
 		txt_time.text = "00:00";
-		txt_time.setStyle({ "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 2 });
+		txt_time.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "20px", "fontStyle": "bold", "stroke": "#000" });
 		container_bg.add(txt_time);
 
 		// container_body
@@ -239,7 +237,7 @@ class Solitaire extends Phaser.Scene {
 		const bg_toast = this.add.rectangle(0, 0, 500, 50);
 		bg_toast.setOrigin(0, 0);
 		bg_toast.isFilled = true;
-		bg_toast.fillColor = 5731141;
+		bg_toast.fillColor = 5670573;
 		container_toast.add(bg_toast);
 
 		// txt_toast
@@ -301,20 +299,31 @@ class Solitaire extends Phaser.Scene {
 			this.container_toast.setVisible(false);
 		}, 2000);
 	}
-	addDefaultCardsAnimation = (card, j, scale) => {
+	addDefaultCardsAnimation = (backCard, card, j) => {
 		this.tweens.add({
 			targets: this.container_piles_main,
 			y: 0,
 			duration: 350,
 			onComplete: () => {
-				if (card.name)
-					// j == i - 1 ? scale = 0 : scale = 1;
-					this.tweens.add({
-						targets: card,
-						scaleX: scale,
-						delay: 0 + (50 * j),
-						duration: 100,
-					});
+				this.tweens.add({
+					targets: backCard,
+					scaleX: 0,
+					delay: 0 + (50 * j),
+					duration: 100,
+					onComplete: () => {
+						backCard.destroy();
+						this.tweens.add({
+							targets: card,
+							scaleX: 1,
+							duration: 100,
+							onComplete: () => {
+								card.setInteractive({ draggable: true });
+								if (j == 6) this.delt_card.setInteractive();
+							}
+						});
+					}
+				});
+
 			}
 		});
 	}
@@ -322,16 +331,27 @@ class Solitaire extends Phaser.Scene {
 		const cardContainer = this.container_piles_main.list
 		for (let i = 0; i <= 6; i++) {
 			for (let j = 0; j <= i; j++) {
+				let backCard;
 				const cardName = i == j ? this.oGameManager.getRandomCard(this.aTotalCards) : "back_red_0";
+				if (i == j) {
+					const backCardName = "back_red_0";
+					backCard = new Card(this, 110 + (200 * i), 625 + (45 * j));
+					backCard.setCard(backCardName);
+					backCard.setName(backCardName);
+					backCard.setSize(180, 260);
+					backCard.setScale(3.5);
+					cardContainer[i].add(backCard);
+				}
 				const card = new Card(this, 110 + (200 * i), 625 + (45 * j));
 				card.setCard(cardName);
 				card.setName(cardName);
 				card.setSize(180, 260);
-				if (cardName == "back_red_0") card.setScale(3.5);
+				if (cardName == "back_red_0") {
+					card.setScale(3.5);
+				}
 				if (cardName != "back_red_0") {
 					card.setScale(0, 1);
-					card.setInteractive({ draggable: true });
-					this.addDefaultCardsAnimation(card, j, 1);
+					this.addDefaultCardsAnimation(backCard, card, j);
 				}
 				cardContainer[i].add(card);
 			}
@@ -417,11 +437,19 @@ class Solitaire extends Phaser.Scene {
 				gameObject.parentContainer.each((card) => this.lastContainer.add(card));
 			}
 		});
-		this.delt_card.setInteractive().on('pointerdown', () => this.deltCard());
+		this.delt_card.on('pointerdown', () => this.deltCard());
 		this.btn_redeal.setInteractive().on('pointerdown', () => this.reDealCards());
 		this.btn_play_again.setInteractive().on('pointerdown', () => {
 			clearInterval(this.nGameInteraval);
-			this.scene.restart();
+			this.tweens.add({
+				targets: this.btn_play_again,
+				scale: 0.8,
+				ease: 'bounce',
+				duration: 100,
+				onComplete: () => {
+					this.scene.restart();
+				}
+			})
 		});
 	}
 	moveCard(gameObject, x, y) {
@@ -628,13 +656,28 @@ class Solitaire extends Phaser.Scene {
 	checkDeltCard = (cardName) => {
 		if (this.aDeltedCards.includes(cardName)) this.aDeltedCards.pop();
 	}
+	reDealCardsAnimation = () => {
+		for (let i = 0; i < this.container_delt_cards_24.list.length; i++) {
+			this.tweens.add({
+				targets: this.container_delt_cards_24.list[i],
+				x: this.delt_card.x,
+				scaleX: 0,
+				duration: 100,
+				delay: i * 50,
+				onComplete: () => {
+					this.delt_card.setVisible(true);
+					if (i == this.container_delt_cards_24.list.length - 1)
+						this.container_delt_cards_24.removeAll(true);
+				}
+			});
+		}
+	}
 	reDealCards = () => {
+		this.reDealCardsAnimation();
 		if (this.aDeltedCards.length) {
-			this.delt_card.setVisible(true);
 			while (this.aDeltedCards.length) {
 				this.aDeltCards.push(this.aDeltedCards.shift());
 			}
-			this.container_delt_cards_24.removeAll(true);
 		}
 	}
 	fireWorks = () => {
