@@ -39,7 +39,7 @@
                     "texture": {
                         "key": "card_base-2"
                     },
-                    "x": 117,
+                    "x": 111,
                     "y": 335
                 },
                 {
@@ -50,21 +50,20 @@
                     "texture": {
                         "key": "back_red_1"
                     },
-                    "x": 117,
+                    "x": 111,
                     "y": 335
                 },
                 {
                     "type": "Text",
                     "id": "cfb2075f-9225-414e-b23f-9723bc71d5a5",
                     "label": "text",
-                    "x": 281,
-                    "y": 308,
+                    "x": 287,
+                    "y": 262,
                     "originX": 0.5,
                     "text": "One Suit",
-                    "fontFamily": "Verdana",
-                    "fontSize": "26px",
-                    "fontStyle": "bold",
-                    "color": "#1038e1ff",
+                    "fontFamily": "BowlbyOne",
+                    "fontSize": "40px",
+                    "color": "#001E82",
                     "stroke": "#000"
                 },
                 {
@@ -72,37 +71,29 @@
                     "id": "f653fc8c-5425-4455-b3ad-6c9825f4a2ff",
                     "label": "btn_play_again",
                     "scope": "CLASS",
+                    "hitArea.shape": "RECTANGLE",
+                    "hitArea.x": 15,
+                    "hitArea.y": 30,
+                    "hitArea.width": 170,
+                    "hitArea.height": 60,
                     "texture": {
                         "key": "button"
                     },
-                    "x": 281,
-                    "y": 410
-                },
-                {
-                    "type": "Image",
-                    "id": "fac056c2-a865-47ed-a477-74b59eeed15a",
-                    "label": "logo",
-                    "texture": {
-                        "key": "logo"
-                    },
-                    "x": 295,
-                    "y": 262,
-                    "scaleX": 0.15,
-                    "scaleY": 0.15
+                    "x": 287,
+                    "y": 408.2332097688132
                 },
                 {
                     "type": "Text",
                     "id": "bff6cd89-5d71-42bd-adbd-153674c281e8",
                     "label": "txt_time",
                     "scope": "CLASS",
-                    "x": 281,
-                    "y": 345,
+                    "x": 287,
+                    "y": 320,
                     "originX": 0.5,
                     "text": "00:00",
-                    "fontFamily": "Verdana",
-                    "fontSize": "26px",
-                    "fontStyle": "bold",
-                    "color": "#1038e1ff",
+                    "fontFamily": "BowlbyOne",
+                    "fontSize": "40px",
+                    "color": "#001E82",
                     "stroke": "#000000"
                 }
             ]

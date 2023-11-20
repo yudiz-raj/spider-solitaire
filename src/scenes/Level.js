@@ -27,35 +27,30 @@ class Level extends Phaser.Scene {
 		const container_bg = this.add.container(0, 1);
 
 		// card_base
-		const card_base = this.add.image(117, 335, "card_base-2");
+		const card_base = this.add.image(111, 335, "card_base-2");
 		container_bg.add(card_base);
 
 		// collect_cards
-		const collect_cards = this.add.image(117, 335, "back_red_1");
+		const collect_cards = this.add.image(111, 335, "back_red_1");
 		container_bg.add(collect_cards);
 
 		// text
-		const text = this.add.text(281, 308, "", {});
+		const text = this.add.text(287, 262, "", {});
 		text.setOrigin(0.5, 0);
 		text.text = "One Suit";
-		text.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "26px", "fontStyle": "bold", "stroke": "#000" });
+		text.setStyle({ "color": "#001E82", "fontFamily": "BowlbyOne", "fontSize": "40px", "stroke": "#000" });
 		container_bg.add(text);
 
 		// btn_play_again
-		const btn_play_again = this.add.image(281, 410, "button");
+		const btn_play_again = this.add.image(287, 408.2332097688132, "button");
+		btn_play_again.setInteractive(new Phaser.Geom.Rectangle(15, 30, 170, 60), Phaser.Geom.Rectangle.Contains);
 		container_bg.add(btn_play_again);
 
-		// logo
-		const logo = this.add.image(295, 262, "logo");
-		logo.scaleX = 0.15;
-		logo.scaleY = 0.15;
-		container_bg.add(logo);
-
 		// txt_time
-		const txt_time = this.add.text(281, 345, "", {});
+		const txt_time = this.add.text(287, 320, "", {});
 		txt_time.setOrigin(0.5, 0);
 		txt_time.text = "00:00";
-		txt_time.setStyle({ "color": "#1038e1ff", "fontFamily": "Verdana", "fontSize": "26px", "fontStyle": "bold", "stroke": "#000000" });
+		txt_time.setStyle({ "color": "#001E82", "fontFamily": "BowlbyOne", "fontSize": "40px", "stroke": "#000000" });
 		container_bg.add(txt_time);
 
 		// container_bg_cards
@@ -365,6 +360,7 @@ class Level extends Phaser.Scene {
 	create() {
 		document.title = "Spider Solitaire";
 		this.oGameManager = new GameManager(this);
+		this.oInputManager = new InputManager(this);
 		this.aTotalCards = this.oGameManager.aSpiderSolitaireCards;
 		this.editorCreate();
 		this.nGameTime = 0;
@@ -424,15 +420,13 @@ class Level extends Phaser.Scene {
 			}
 		});
 		this.collect_cards.setInteractive().on('pointerdown', () => {
+			this.collect_cards.disableInteractive();
 			if (this.collectCards()) {
 				this.nCollectCounter++
 				if (this.nCollectCounter == 5) this.collect_cards.setVisible(false);
 			}
 		})
-		this.btn_play_again.setInteractive().on('pointerdown', () => {
-			clearInterval(this.nGameInteraval);
-			this.scene.restart();
-		});
+		this.oInputManager.buttonClick(this.btn_play_again);
 	}
 	moveCard(gameObject, x, y) {
 		this.isCardDragging = true;
@@ -591,6 +585,9 @@ class Level extends Phaser.Scene {
 			delay: 0 + (50 * i),
 			duration: 200,
 			onComplete: () => {
+				if (i == container.length - 1) {
+					this.collect_cards.setInteractive();
+				}
 				card.setInteractive({ draggable: true });
 			}
 		})
