@@ -27,27 +27,27 @@ class Level extends Phaser.Scene {
 		const container_bg = this.add.container(0, 1);
 
 		// card_base
-		const card_base = this.add.image(111, 335, "card_base-2");
+		const card_base = this.add.image(102, 335, "card_base-2");
 		container_bg.add(card_base);
 
 		// collect_cards
-		const collect_cards = this.add.image(111, 335, "back_red_1");
+		const collect_cards = this.add.image(102, 335, "back_red_1");
 		container_bg.add(collect_cards);
 
 		// text
-		const text = this.add.text(287, 262, "", {});
+		const text = this.add.text(278, 262, "", {});
 		text.setOrigin(0.5, 0);
 		text.text = "One Suit";
 		text.setStyle({ "color": "#001E82", "fontFamily": "BowlbyOne", "fontSize": "40px", "stroke": "#000" });
 		container_bg.add(text);
 
 		// btn_play_again
-		const btn_play_again = this.add.image(287, 408.2332097688132, "button");
+		const btn_play_again = this.add.image(278, 408, "button");
 		btn_play_again.setInteractive(new Phaser.Geom.Rectangle(15, 30, 170, 60), Phaser.Geom.Rectangle.Contains);
 		container_bg.add(btn_play_again);
 
 		// txt_time
-		const txt_time = this.add.text(287, 320, "", {});
+		const txt_time = this.add.text(278, 320, "", {});
 		txt_time.setOrigin(0.5, 0);
 		txt_time.text = "00:00";
 		txt_time.setStyle({ "color": "#001E82", "fontFamily": "BowlbyOne", "fontSize": "40px", "stroke": "#000000" });
@@ -57,61 +57,61 @@ class Level extends Phaser.Scene {
 		const container_bg_cards = this.add.container(0, 0);
 
 		// card_base_0
-		const card_base_0 = this.add.image(111, 600, "card_base-2");
+		const card_base_0 = this.add.image(102, 600, "card_base-2");
 		card_base_0.scaleX = 1.6;
 		card_base_0.scaleY = 1.6;
 		container_bg_cards.add(card_base_0);
 
 		// card_base_1
-		const card_base_1 = this.add.image(302, 600, "card_base-2");
+		const card_base_1 = this.add.image(293, 600, "card_base-2");
 		card_base_1.scaleX = 1.6;
 		card_base_1.scaleY = 1.6;
 		container_bg_cards.add(card_base_1);
 
 		// card_base_2
-		const card_base_2 = this.add.image(493, 600, "card_base-2");
+		const card_base_2 = this.add.image(484, 600, "card_base-2");
 		card_base_2.scaleX = 1.6;
 		card_base_2.scaleY = 1.6;
 		container_bg_cards.add(card_base_2);
 
 		// card_base_3
-		const card_base_3 = this.add.image(684, 600, "card_base-2");
+		const card_base_3 = this.add.image(675, 600, "card_base-2");
 		card_base_3.scaleX = 1.6;
 		card_base_3.scaleY = 1.6;
 		container_bg_cards.add(card_base_3);
 
 		// card_base_4
-		const card_base_4 = this.add.image(874, 600, "card_base-2");
+		const card_base_4 = this.add.image(866, 600, "card_base-2");
 		card_base_4.scaleX = 1.6;
 		card_base_4.scaleY = 1.6;
 		container_bg_cards.add(card_base_4);
 
 		// card_base_5
-		const card_base_5 = this.add.image(1064, 600, "card_base-2");
+		const card_base_5 = this.add.image(1057, 600, "card_base-2");
 		card_base_5.scaleX = 1.6;
 		card_base_5.scaleY = 1.6;
 		container_bg_cards.add(card_base_5);
 
 		// card_base_6
-		const card_base_6 = this.add.image(1254, 600, "card_base-2");
+		const card_base_6 = this.add.image(1248, 600, "card_base-2");
 		card_base_6.scaleX = 1.6;
 		card_base_6.scaleY = 1.6;
 		container_bg_cards.add(card_base_6);
 
 		// card_base_7
-		const card_base_7 = this.add.image(1445, 600, "card_base-2");
+		const card_base_7 = this.add.image(1439, 600, "card_base-2");
 		card_base_7.scaleX = 1.6;
 		card_base_7.scaleY = 1.6;
 		container_bg_cards.add(card_base_7);
 
 		// card_base_8
-		const card_base_8 = this.add.image(1636, 600, "card_base-2");
+		const card_base_8 = this.add.image(1630, 600, "card_base-2");
 		card_base_8.scaleX = 1.6;
 		card_base_8.scaleY = 1.6;
 		container_bg_cards.add(card_base_8);
 
 		// card_base_9
-		const card_base_9 = this.add.image(1827, 600, "card_base-2");
+		const card_base_9 = this.add.image(1821, 600, "card_base-2");
 		card_base_9.scaleX = 1.6;
 		card_base_9.scaleY = 1.6;
 		container_bg_cards.add(card_base_9);
@@ -173,35 +173,35 @@ class Level extends Phaser.Scene {
 		const container_base_cards = this.add.container(0, 0);
 
 		// baseCard_7
-		const baseCard_7 = new BaseCard(this, 1827, 340);
+		const baseCard_7 = new BaseCard(this, 1821, 340);
 		container_base_cards.add(baseCard_7);
 
 		// baseCard_6
-		const baseCard_6 = new BaseCard(this, 1636, 340);
+		const baseCard_6 = new BaseCard(this, 1630, 340);
 		container_base_cards.add(baseCard_6);
 
 		// baseCard_5
-		const baseCard_5 = new BaseCard(this, 1445, 340);
+		const baseCard_5 = new BaseCard(this, 1439, 340);
 		container_base_cards.add(baseCard_5);
 
 		// baseCard_4
-		const baseCard_4 = new BaseCard(this, 1254, 340);
+		const baseCard_4 = new BaseCard(this, 1248, 340);
 		container_base_cards.add(baseCard_4);
 
 		// baseCard_3
-		const baseCard_3 = new BaseCard(this, 1064, 340);
+		const baseCard_3 = new BaseCard(this, 1057, 340);
 		container_base_cards.add(baseCard_3);
 
 		// baseCard_2
-		const baseCard_2 = new BaseCard(this, 874, 340);
+		const baseCard_2 = new BaseCard(this, 866, 340);
 		container_base_cards.add(baseCard_2);
 
 		// baseCard_1
-		const baseCard_1 = new BaseCard(this, 684, 340);
+		const baseCard_1 = new BaseCard(this, 675, 340);
 		container_base_cards.add(baseCard_1);
 
 		// baseCard_0
-		const baseCard_0 = new BaseCard(this, 493, 340);
+		const baseCard_0 = new BaseCard(this, 484, 340);
 		container_base_cards.add(baseCard_0);
 
 		// container_top
@@ -306,10 +306,10 @@ class Level extends Phaser.Scene {
 			let cards = 5;
 			if (i > 3) cards = 4
 			for (let j = 0; j < cards; j++) {
-				const card = new Card(this, 111 + (191 * i), 600 + (45 * j));
+				const card = new Card(this, 102 + (191 * i), 600 + (45 * j));
 				card.setCard("back_red_0");
 				card.setName("back_red_0");
-				card.setScale(3.5);
+				card.setScale(3.45);
 				cardContainer[i].add(card);
 			}
 		}
@@ -317,13 +317,13 @@ class Level extends Phaser.Scene {
 			let card = 5;
 			if (i > 3) card = 4
 			for (let j = card; j < card + 1; j++) {
-				const backCard = new Card(this, 111 + (191 * i), 600 + (45 * j));
+				const backCard = new Card(this, 102 + (191 * i), 600 + (45 * j));
 				backCard.setCard("back_red_0");
 				backCard.setName("back_red_0");
 				cardContainer[i].add(backCard);
 				backCard.setScale(3.5);
 				const cardName = "spade_" + this.oGameManager.getRandomCard(this.aTotalCards);
-				const card = new Card(this, 111 + (191 * i), 600 + (45 * j));
+				const card = new Card(this, 102 + (191 * i), 600 + (45 * j));
 				card.setScale(0, 1);
 				card.setCard(cardName);
 				card.setName(cardName);
@@ -444,31 +444,40 @@ class Level extends Phaser.Scene {
 			case (x >= 390 && x < 585):
 				this.checkLastCard(this.container_cards_main.list[2], 2);
 				break;
-			case (x >= 585 && x < 780):
+			case (x >= 585 && x < 775):
 				this.checkLastCard(this.container_cards_main.list[3], 3);
 				break;
-			case (x >= 780 && x < 975):
+			case (x >= 775 && x < 965):
 				this.checkLastCard(this.container_cards_main.list[4], 4);
 				break;
-			case (x >= 975 && x < 1170):
+			case (x >= 965 && x < 1155):
 				this.checkLastCard(this.container_cards_main.list[5], 5);
 				break;
-			case (x >= 1170 && x < 1365):
+			case (x >= 1155 && x < 1345):
 				this.checkLastCard(this.container_cards_main.list[6], 6);
 				break;
-			case (x >= 1365 && x < 1560):
+			case (x >= 1345 && x < 1540):
 				this.checkLastCard(this.container_cards_main.list[7], 7);
 				break;
-			case (x >= 1560 && x < 1755):
+			case (x >= 1540 && x < 1725):
 				this.checkLastCard(this.container_cards_main.list[8], 8);
 				break;
-			case (x >= 1755 && x < 1950):
+			case (x >= 1725 && x < 1950):
 				this.checkLastCard(this.container_cards_main.list[9], 9);
 				break;
 			default:
 				this.checkLastCard(this.container_cards_main.list[0], 0);
 				break;
 		}
+	}
+	cardPlaceAnimation = (container) => {
+		this.tweens.add({
+			targets: container.list,
+			ease: 'elastic-out',
+			y: { from: container.list.y, to: container.list.y + 5 },
+			duration: 20,
+			yoyo: true
+		});
 	}
 	checkLastCard = (container, index) => {
 		if (container.length) {
@@ -478,18 +487,20 @@ class Level extends Phaser.Scene {
 				this.container_top.each(card => container.add(card));
 				this.arrangeCards(container, index);
 				this.openLastCard(this.lastContainer);
+				this.cardPlaceAnimation(container);
 			} else {
 				this.container_top.each(card => this.lastContainer.add(card))
 				this.showToast(this.oToasts.drop);
-				this.arrangeCards(this.lastContainer, parseInt(this.lastContainer.name.match(/\d+/)[0]));
 			}
 		} else {
 			this.container_top.each(card => container.add(card))
 			this.arrangeCards(container, index);
 			this.openLastCard(this.lastContainer);
+			this.cardPlaceAnimation(container);
 		}
+		this.arrangeCards(this.lastContainer, parseInt(this.lastContainer.name.match(/\d+/)[0]));
 	}
-	winSequenceAnimation = (container, card, i, sequenceCardCount) => {
+	winSequenceAnimation = (container, card, i, sequenceCardCount, index) => {
 		this.tweens.add({
 			targets: card,
 			x: this.container_base_cards.list[this.nTotalSequence].x,
@@ -497,9 +508,14 @@ class Level extends Phaser.Scene {
 			duration: 100,
 			delay: 0 + (i * 50),
 			onComplete: () => {
-				this.container_sequence_cards.add(card);
+				// this.container_sequence_cards.add(card);
+				card.destroy();
 				if (sequenceCardCount == 12) {
-					console.log(sequenceCardCount);
+					const card = new Card(this, this.container_base_cards.list[this.nTotalSequence].x, this.container_base_cards.list[this.nTotalSequence].y);
+					card.setCard("spade_1");
+					card.setName("spade_1");
+					this.container_sequence_cards.add(card);
+					this.arrangeCards(container, index);
 					this.openLastCard(container);
 				}
 			}
@@ -507,11 +523,24 @@ class Level extends Phaser.Scene {
 	}
 	arrangeCards = (container, index) => {
 		let gap = 45;
-		if (container.list.length > 14) gap = 45;
-		if (container.list.length >= 10) gap = 35;
-		if (container.list.length >= 17) gap = 30;
+		if (container.list.length >= 13) gap = 40;
+		if (container.list.length >= 15) gap = 38;
+		if (container.list.length >= 16) gap = 36;
+		if (container.list.length >= 17) gap = 34;
+		if (container.list.length >= 18) gap = 32;
+		if (container.list.length >= 19) gap = 30;
+		if (container.list.length >= 20) gap = 29;
+		if (container.list.length >= 21) gap = 28;
+		if (container.list.length >= 22) gap = 27;
+		if (container.list.length >= 23) gap = 26;
+		if (container.list.length >= 24) gap = 25;
+		if (container.list.length >= 25) gap = 24;
+		if (container.list.length >= 26) gap = 23;
+		if (container.list.length >= 28) gap = 22;
+		if (container.list.length >= 29) gap = 20;
+		if (container.list.length >= 30) gap = 18;
 		container.list.forEach((card, i) => {
-			card.x = 111 + (191 * index);
+			card.x = 102 + (191 * index);
 			card.y = 600 + (gap * i);
 		});
 		if (container.length >= 13) {
@@ -531,7 +560,9 @@ class Level extends Phaser.Scene {
 					for (let i = length - 1; i >= length - 13; i--) {
 						sequenceCardCount--;
 						container.list[i].disableInteractive();
-						this.winSequenceAnimation(container, container.list[i], i, sequenceCardCount);
+						let card = container.list[i];
+						this.container_sequence_cards.add(container.list[i]);
+						this.winSequenceAnimation(container, card, i, sequenceCardCount, index);
 					}
 					if (this.nTotalSequence == 7) this.fireWorks();
 				}
@@ -574,7 +605,7 @@ class Level extends Phaser.Scene {
 		card.setScale(0.65);
 		this.tweens.add({
 			targets: card,
-			x: 111 + (191 * i),
+			x: 102 + (191 * i),
 			y: y,
 			onStart: () => {
 				card.setVisible(true);
@@ -585,6 +616,7 @@ class Level extends Phaser.Scene {
 			delay: 0 + (50 * i),
 			duration: 200,
 			onComplete: () => {
+				this.arrangeCards(container[i], i)
 				if (i == container.length - 1) {
 					this.collect_cards.setInteractive();
 				}
