@@ -484,19 +484,19 @@ class Level extends Phaser.Scene {
 			const lastCard = parseInt(container.list[container.list.length - 1].name.match(/\d+/)[0]);
 			const dragCardNumber = parseInt(this.container_top.list[0].name.match(/\d+/)[0]);
 			if (dragCardNumber === lastCard - 1) {
+				this.cardPlaceAnimation(this.container_top);
 				this.container_top.each(card => container.add(card));
 				this.arrangeCards(container, index);
 				this.openLastCard(this.lastContainer);
-				this.cardPlaceAnimation(container);
 			} else {
 				this.container_top.each(card => this.lastContainer.add(card))
 				this.showToast(this.oToasts.drop);
 			}
 		} else {
+			this.cardPlaceAnimation(this.container_top);
 			this.container_top.each(card => container.add(card))
 			this.arrangeCards(container, index);
 			this.openLastCard(this.lastContainer);
-			this.cardPlaceAnimation(container);
 		}
 		this.arrangeCards(this.lastContainer, parseInt(this.lastContainer.name.match(/\d+/)[0]));
 	}
